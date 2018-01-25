@@ -1,0 +1,231 @@
+{% extends "base.html" %}
+{% block title %}services page{% endblock%}
+{% block content %}
+  <header id="page-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 m-auto text-center">
+            <h1>등록 방법</h1>
+          </div>
+        </div>
+      </div>
+  </header>
+
+  <section id="services">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card text-center my-2">
+            <div class="card-header">
+              <h3>성인 월회비</h3>
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">
+                15 만원
+              </h4>
+              <p class="card-text">(15만원 x 1 개월)</p>
+            </div>
+            <a href="" class="btn btn-danger btn-block mt-2">지금 등록</a>
+            <div class="card-footer text-muted">
+              매월 납부
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card text-center my-2">
+            <div class="card-header">
+              <h3>신입회원 회비</h3>
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">
+                30 만원
+              </h4>
+              <p class="card-text">(10만원 x 3개월)</p>
+            </div>
+            <a href="" class="btn btn-danger btn-block mt-2">지금 등록</a>
+            <div class="card-footer text-muted">
+              3개월 회비 선납
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card text-center my-2">
+            <div class="card-header">
+              <h3>성인 연회비 </h3>
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">
+                150 만원
+              </h4>
+              <p class="card-text">(15만원 x 10 개월)</p>
+            </div>
+            <a href="" class="btn btn-danger btn-block mt-2">지금 등록</a>
+            <div class="card-footer text-muted">
+              1 년 회비 선납
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card text-center my-2">
+            <div class="card-header">
+              <h4>가족성인 연회비</h4>
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">
+                100 만원
+              </h4>
+              <p class="card-text">(10만원 x 10 개월)</p>
+            </div>
+            <a href="" class="btn btn-danger btn-block mt-2">지금 등록</a>
+            <div class="card-footer text-muted">
+              연회비 선납
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card text-center my-2">
+            <div class="card-header">
+              <h3>가족학생 회비</h3>
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">
+                80 만원
+              </h4>
+              <p class="card-text">(8만원 x 10개월)</p>
+            </div>
+            <a href="" class="btn btn-danger btn-block mt-2">지금 등록</a>
+            <div class="card-footer text-muted">
+              연회비 선납
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card text-center my-2">
+            <div class="card-header">
+              <h3>승급 심사비</h3>
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">
+                5, 10, 20, 30, 50 만원
+              </h4>
+              <p class="card-text">(해당 띠별로 상이)</p>
+            </div>
+            <a href="" class="btn btn-danger btn-block mt-2">지금 등록</a>
+            <div class="card-footer text-muted">
+              심사일전 납부
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="p-5">
+    <div class="container">
+      <h1 class="text-center">자주 묻는 질문</h1>
+      <hr>
+      <div class="row">
+      <div class="col-md-6">
+        <div id="accordion" role="tablist">
+          <div class="card">
+            <div class="card-header" role="tab" id="headingOne">
+              <h5 class="mb-0">
+                <a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  등록 후 개인사정으로 못나오는 기간은 어떻게 되나요 ?
+                </a>
+              </h5>
+            </div>
+
+            <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+              <div class="card-body">
+                개인 사정으로 중도에 못 나오는 경우는 년 회비 기간에 포함됩니다.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" role="tab" id="headingTwo">
+              <h5 class="mb-0">
+                <a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  승급일은 언제 인가요 ?
+                </a>
+              </h5>
+            </div>
+            <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
+              <div class="card-body">
+                매월 마지막 주 목요일이 승급 심사일 입니다.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" role="tab" id="headingThree">
+              <h5 class="mb-0">
+                <a class="collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  승급 기간은 어떻게 되나요 ?
+                </a>
+              </h5>
+            </div>
+            <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
+              <div class="card-body">
+                노란 3 개월, 보라/녹색 6 개월, 밤색/파란/주황 6 개월, 빨강 10개월, 단보 1년, 검정 2년
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div id="accordion2" role="tablist">
+          <div class="card">
+            <div class="card-header" role="tab" id="headingFour">
+              <h5 class="mb-0">
+                <a data-toggle="collapse" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                  등록 후 개인사정으로 못나오는 기간은 어떻게 되나요 ?
+                </a>
+              </h5>
+            </div>
+
+            <div id="collapseFour" class="collapse show" role="tabpanel" aria-labelledby="headingFour" data-parent="#accordion2">
+              <div class="card-body">
+                개인 사정으로 중도에 못 나오는 경우는 년 회비 기간에 포함됩니다.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" role="tab" id="headingFive">
+              <h5 class="mb-0">
+                <a class="collapsed" data-toggle="collapse" href="#collapseFive" aria-expanded="false" aria-controls="collapseTwo">
+                  승급일은 언제 인가요 ?
+                </a>
+              </h5>
+            </div>
+            <div id="collapseFive" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion2">
+              <div class="card-body">
+                매월 마지막 주 목요일이 승급 심사일 입니다.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" role="tab" id="headingSix">
+              <h5 class="mb-0">
+                <a class="collapsed" data-toggle="collapse" href="#collapseSix" aria-expanded="false" aria-controls="collapseThree">
+                  승급 기간은 어떻게 되나요 ?
+                </a>
+              </h5>
+            </div>
+            <div id="collapseSix" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion2">
+              <div class="card-body">
+                노란 3 개월, 보라/녹색 6 개월, 밤색/파란/주황 6 개월, 빨강 10개월, 단보 1년, 검정 2년
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      </div>
+    </div>
+
+  </section>
+  {% endblock %}

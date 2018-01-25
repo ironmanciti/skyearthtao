@@ -1,5 +1,4 @@
 from flask import Flask, render_template, request
-import sys
 
 app = Flask(__name__)
 
@@ -24,5 +23,5 @@ def index():
     return render_template("home.html")
 
 if __name__ == "__main__":
-    sys.stdout = open('file.log', 'w')
+    # sys.stdout = open('file.log', 'w')
     app.run()

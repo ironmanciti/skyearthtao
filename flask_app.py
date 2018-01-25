@@ -24,4 +24,4 @@ def index():
 
 if __name__ == "__main__":
     # sys.stdout = open('file.log', 'w')
-    app.run()
+    app.run(debug=True)

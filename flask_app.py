@@ -11,17 +11,16 @@ app = Flask(__name__)
 def index():
     rule = request.url_rule
     if 'home' in rule.rule:
-        return render_template("home.html")
+        return render_template("home.html",home=True)
     if 'about' in rule.rule:
-        return render_template("about.html")
+        return render_template("about.html",about=True)
     if 'services' in rule.rule:
-        return render_template("services.html")
+        return render_template("services.html",services=True)
     if 'blog' in rule.rule:
-        return render_template("blog.html")
+        return render_template("blog.html",blog=True)
     if 'contact' in rule.rule:
-        return render_template("contact.html")
-    return render_template("home.html")
+        return render_template("contact.html",contact=True)
+    return render_template("home.html",home=True)
 
 if __name__ == "__main__":
-    # sys.stdout = open('file.log', 'w')
     app.run(debug=True)

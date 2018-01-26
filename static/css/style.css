@@ -3,7 +3,7 @@ body {
   overflow-x: hidden; }
 
 .navbar .nav-link {
-  font-size: 14px;
+  font-size: 16px;
   padding-left: 1em !important;
   padding-right: 1em !important; }
 
@@ -69,10 +69,8 @@ footer#main-footer {
 #page-header {
   height: 200px;
   background: url("/static/img/sangho.jpg");
-  /* background-position: 0 -300px; */
-  background-attachment: fixed;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size:100% 100%;
   color: white;
   border-bottom: 1px #eee solid;
   padding-top: 50px; }

@@ -68,10 +68,10 @@ footer#main-footer {
 
 #page-header {
   height: 200px;
-  background: url("/static/img/sangho.jpg");
+  background: url("/static/img/sangho.png");
   background-repeat: no-repeat;
   background-size:100% 100%;
-  color: white;
+  color: #26cd96;
   border-bottom: 1px #eee solid;
   padding-top: 50px; }
 

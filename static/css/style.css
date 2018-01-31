@@ -49,6 +49,10 @@ body {
   width: 100%;
   height: 100%; }
 
+.belt {
+  font-size: 20px;
+}
+
 #video-play {
   position: relative;
   min-height: 200px;

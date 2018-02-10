@@ -71,16 +71,15 @@ footer#main-footer {
   color: #fff; }
 
 #page-header {
-  height: 200px;
+  height: 140px;
+  width: 900px;
   background: url("/static/img/sangho.png");
   background-repeat: no-repeat;
   background-size:100% 100%;
   color: #26cd96;
-  border-bottom: 1px #eee solid;
-  padding-top: 50px; }
-
-#about img {
-  margin-top: -50px; }
+  padding-top: 50px;
+  margin-left: 100px;
+ }
 
 #fas .card {
   border: #444; }
@@ -90,3 +89,26 @@ footer#main-footer {
 
 #fas .card-body, #fas .card-header {
   background: #333; }
+
+.back-to-top {
+  background: none;
+  margin: 0;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100px;
+  height: 50px;
+  z-index: 100;
+  display: none;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #ff9000;
+  }
+
+.back-to-top:hover {
+  text-decoration: none;
+}
+
+.back-to-top i {
+  font-size: 40px;
+}

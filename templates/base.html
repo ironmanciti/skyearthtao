@@ -13,7 +13,14 @@
 <body>
   <div class="container">
   <nav class="navbar navbar-expand-sm navbar-dark bg-success">
-      <a class="navbar-brand" href="/home"><img src="/static/img/logo.png" style="width:40px;" class="mx-5" alt="천지"></a>
+      <a class="navbar-brand" href="/home"><img src="/static/img/logo.png" style="width:40px;" class="mx-5">
+        {% if home %}<img src="/static/img/sangho_opt.png" style="height:50px;" class="mx-5">
+        {% elif about %}혈기시통(穴氣始通)
+        {% elif services %}무통선인(無痛仙人)
+        {% elif blog %}선호흡 후동작(先呼吸 後動作)
+        {% elif contact %}탈기(脫氣)
+        {% endif %}
+      </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -65,10 +72,13 @@
     </div>
   </div>
 
+  <a href="#" class="back-to-top"><i class="fa fa-arrow-circle-up"></i>처음으로</a>
+
   <script src="{{ url_for('static',filename='js/jquery.min.js') }}"></script>
   <script src="{{ url_for('static',filename='js/popper.min.js') }}"></script>
   <script src="{{ url_for('static',filename='js/bootstrap.min.js') }}"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
   <script src="{{ url_for('static',filename='js/main.js') }}"></script>
+
 </body>
 </html>

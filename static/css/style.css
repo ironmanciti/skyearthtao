@@ -70,15 +70,10 @@ footer#main-footer {
   background: #000;
   color: #fff; }
 
-#page-header {
-  height: 140px;
+#page-header img {
   width: 900px;
-  background: url("/static/img/sangho.png");
-  background-repeat: no-repeat;
-  background-size:100% 100%;
-  color: #26cd96;
-  padding-top: 50px;
-  margin-left: 100px;
+  max-width: 100%;
+  height: auto;
  }
 
 #fas .card {

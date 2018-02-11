@@ -11,19 +11,7 @@ body {
   border-left: #444 3px solid; }
 
 .carousel-item {
-  height: 450px; }
-
-.carousel-image-1 {
-  background: url("/static/img/carousel1.jpg");
-  background-size: cover; }
-
-.carousel-image-2 {
-  background: url("/static/img/carousel2.jpg");
-  background-size: cover; }
-
-.carousel-image-3 {
-  background: url("/static/img/carousel3.jpg");
-  background-size: cover; }
+  height: 250px; }
 
 .fa {
   font-size: 55px; }

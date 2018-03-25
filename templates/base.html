@@ -15,10 +15,10 @@
   <nav class="navbar navbar-expand-sm navbar-dark bg-success">
       <a class="navbar-brand" href="/home">
         {% if home %}<img src="/static/img/logo2.png" style="height:75px;">
-        {% elif about %}<img src="/static/img/logo2.png" style="height:75px;"><span style="padding-left: 60px">혈기시통(穴氣始通)</span>
-        {% elif services %}<img src="/static/img/logo2.png" style="height:75px;"><span style="padding-left: 60px">무통선인(無痛仙人)</span>
-        {% elif blog %}<img src="/static/img/logo2.png" style="height:75px;"><span style="padding-left: 60px">선호흡 후동작(先呼吸 後動作)</span>
-        {% elif contact %}<img src="/static/img/logo2.png" style="height:75px;"><span style="padding-left: 60px">탈기(脫氣)</span>
+        {% elif about %}<img src="/static/img/logo2.png" style="height:75px;">
+        {% elif services %}<img src="/static/img/logo2.png" style="height:75px;">
+        {% elif blog %}<img src="/static/img/logo2.png" style="height:75px;">
+        {% elif contact %}<img src="/static/img/logo2.png" style="height:75px;">
         {% endif %}
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -46,7 +46,7 @@
   </nav>
 </div>
 
-<header id="page-header">
+<!-- <header id="page-header">
     <div class="container">
       <div class="row">
         <div class="col-md-6 m-auto text-center">
@@ -54,7 +54,7 @@
         </div>
       </div>
     </div>
-</header>
+</header> -->
 
   <div class="container">
     {% block content %} {% endblock %}

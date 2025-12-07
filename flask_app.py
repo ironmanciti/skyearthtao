@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, make_response
 
 app = Flask(__name__)
 
@@ -21,6 +21,21 @@ def index():
     if 'contact' in rule.rule:
         return render_template("contact.html",contact=True)
     return render_template("home.html",home=True)
+
+@app.route('/sitemap.xml', methods=['GET'])
+def sitemap():
+    urls = [
+        'http://www.1000ji.co.kr/home/',
+        'http://www.1000ji.co.kr/about/',
+        'http://www.1000ji.co.kr/services/',
+        'http://www.1000ji.co.kr/contact/'
+    ]
+
+    sitemap_xml = render_template('sitemap.xml', urls=urls)
+    response = make_response(sitemap_xml)
+    response.headers['Content-Type'] = 'application/xml'
+
+    return response
 
 if __name__ == "__main__":
     app.run(debug=True)
